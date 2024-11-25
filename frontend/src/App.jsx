@@ -1,0 +1,25 @@
+import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Pages/home'
+import Navbar from './components/navbar'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <div className='App'>
+      <BrowserRouter>
+      <Navbar/>
+        <div className='pages'>
+          
+          <Routes>
+            <Route path='/' element={<Home/>} />
+          </Routes>
+          
+        </div>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App
