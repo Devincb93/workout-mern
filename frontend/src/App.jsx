@@ -4,11 +4,12 @@ import Home from './Pages/home'
 import Navbar from './components/navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <div className='App'>
       <BrowserRouter>
+      <div>
       <Navbar/>
         <div className='pages'>
           
@@ -17,6 +18,7 @@ function App() {
           </Routes>
           
         </div>
+      </div>
       </BrowserRouter>
     </div>
   )
